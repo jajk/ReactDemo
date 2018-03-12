@@ -2,10 +2,10 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { createStore } from 'redux';
 import { Provider } from 'react-redux';
-import counter from './reducers/counter';
-import App from './component/counterContainer';
+import reducers from './reducers/index';
+import App from './component/appContainer';
 
-let store = createStore(counter);
+let store = createStore(reducers);
 
 ReactDOM.render(
   <Provider store={store}>

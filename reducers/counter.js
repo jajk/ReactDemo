@@ -1,8 +1,7 @@
-export default function counter(state={count: 0}, action) {
-    let count = state.count;
+export default function counter(state=0, action) {
     switch(action.type){
         case 'increase':
-            return {count: count+1};
+            return state+1;
         default:
             return state;
     }

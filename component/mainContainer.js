@@ -1,19 +1,21 @@
 import {connect} from "react-redux";
-import Counter from './counter';
-import increaseAction from '../actions/counter/index';
+import Main from './main';
+import changeName from "../actions/main";
 
 // Map Redux state to component props
 function mapStateToProps(state)  {
     console.log(state);
     return {
-        value: state.count
+        name: state.name
     };
 }
 
 // Map Redux actions to component props
 function mapDispatchToProps(dispatch) {
     return {
-        onIncreaseClick: () => dispatch(increaseAction)
+        onChangeName: (event) => {
+            dispatch(Object.assign(changeName, {name: event.target.value}));
+        }
     };
 }
 
@@ -21,4 +23,4 @@ function mapDispatchToProps(dispatch) {
 export default connect(
     mapStateToProps,
     mapDispatchToProps
-)(Counter);
+)(Main);
