@@ -1,8 +1,7 @@
 {
-  "name": "simplest-redux-example",
+  "name": "ReactDemo",
   "version": "0.0.0",
-  "description": "simplest redux + react example",
-  "main": "index.js",
+  "description": "ReactDemo",
   "scripts": {
     "dev": "webpack --watch --config webpack.config.js"
   },
