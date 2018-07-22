@@ -4,9 +4,8 @@ import increaseAction from '../actions/counter/index';
 
 // Map Redux state to component props
 function mapStateToProps(state)  {
-    console.log(state);
     return {
-        value: state.count
+        value: state.get('count')
     };
 }
 
