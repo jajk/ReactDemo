@@ -1,0 +1,6 @@
+export default function fetchServices () {
+    return {
+        type: 'fieldArrayDemo',
+        data: [{"name":"def"},{"name":"lmregistry"},{"name":"ccbiller"},{"name":"gcc"},{"name":"hipchatsoa"},{"name":"netflow_aggregator"},{"name":"statsd-collection-service"},{"name":"tsdb"},{"name":"amy"},{"name":"netflowv3"},{"name":"adminapp"},{"name":"statsd-service"},{"name":"alerting"},{"name":"ingest"},{"name":"statsd-metric-center"},{"name":"statsd-cloud-collector"},{"name":"ccprober"},{"name":"sitemonitor"},{"name":"ccscheduler"},{"name":"mysql"},{"name":"axxx"},{"name":"collector_delivery_service"},{"name":"cids"},{"name":"lmes"},{"name":"reporting"},{"name":"motanrpc_StatsDMetricCenter"},{"name":"abc"},{"name":"datamining"},{"name":"renderserver"},{"name":"dbe"},{"name":"relay"},{"name":"Lmes"},{"name":"AMY"},{"name":"motanrpc_StatsDService"},{"name":"deliverycenter"},{"name":"inlinehelp"},{"name":"cds"},{"name":"consul"},{"name":"santaba"},{"name":"herui-feature-test"},{"name":"Amy1"}]
+    }
+}
